@@ -15,7 +15,7 @@ namespace TiendaServicios.Api.Autor.Controllers
         public AutorController(IMediator mediator)
         {
             this.mediator = mediator;
-        }
+        } 
 
         [HttpPost]
         public async Task<ActionResult<Unit>> Crear(Nuevo.Ejecuta data)
