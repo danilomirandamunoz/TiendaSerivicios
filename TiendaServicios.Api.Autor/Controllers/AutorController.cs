@@ -20,6 +20,7 @@ namespace TiendaServicios.Api.Autor.Controllers
         [HttpPost]
         public async Task<ActionResult<Unit>> Crear(Nuevo.Ejecuta data)
         {
+            //test de prueba
             return await this.mediator.Send(data);
         }
 
