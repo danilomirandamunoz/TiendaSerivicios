@@ -22,7 +22,7 @@ namespace TiendaServicios.Api.CarritoCompra.Controllers
             return await mediator.Send(data);
         }
 
-        [HttpGet("id")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<CarritoDto>> GetCarrito(int id)
         {
             return await mediator.Send(new Consulta.Ejecuta { CarritoSesionId = id});
